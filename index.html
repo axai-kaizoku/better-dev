@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Better dev</title>
+	</head>
+	<body>
+		Better Dev
+	</body>
+	<script>
+		fetch("./README.md")
+			.then((r) => r.text())
+			.then((text) => {
+				const pre = document.createElement("pre");
+				pre.textContent = text;
+				document.body.append(pre);
+			});
+	</script>
+</html>
