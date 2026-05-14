@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jar CRM</title>
+
+    <script src="https://accounts.google.com/gsi/client"></script>
+
+    <link rel="shortcut icon" href="/static/img/favicon.png" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0VwVa9cn3dHeciuTM_zAqzLiXK7FZ6U8&v=3.exp&libraries=geometry,drawing,places"></script>
+    <style media="screen" type="text/css">
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .loading {
+        -webkit-animation: sk-scaleout 3s infinite ease-in-out;
+        animation: sk-scaleout 3s infinite ease-in-out;
+        background-color: white;
+        border-radius: 100%;
+        height: 6em;
+        width: 6em;
+      }
+      .container {
+        align-items: center;
+        background-color: black;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 100vw;
+      }
+      @keyframes sk-scaleout {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        100% {
+          -webkit-transform: scale(1);
+          opacity: 0;
+          transform: scale(1);
+        }
+      }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-XXXXXXX");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <div id="root">
+      <div id="spinner" class="container">
+        <div class="loading"></div>
+      </div>
+    </div>
+  </body>
+</html>
