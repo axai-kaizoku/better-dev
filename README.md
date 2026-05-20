@@ -11,6 +11,9 @@
 - [ ] docker exec -it ---- /bin/bash (to go inside a container interactively)
 - [ ] docker images (to check all the built images in your system)
 - [ ] docker run -d -p 3000:3000 --name ---- -image-x-name- (to run a locally built image)
+- [ ] docker logs -f ---xx-x-
+
+
 
 - ----, --x-x-, --image-name indicates docker container name 
 
