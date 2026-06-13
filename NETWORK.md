@@ -16,4 +16,7 @@
 - [ ] host 192.168.0.12 -- ^
 - [ ] nmap -- brew package to get host name (device name) of connected devices
 - [ ] http://192.168.0.1 -- goes to router admin page
+- [ ] lsof -i -P -- open ports of device
+- [ ] nslookup google.com -- gets the ip address of the server; dns resolving
+- [ ] dig google.com -- ^
 
